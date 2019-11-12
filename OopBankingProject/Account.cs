@@ -4,12 +4,14 @@ using System.Text;
 
 namespace OopBankingProject {
 
-    public class Account {
+    public abstract class Account {
 
         public string Number { get; set; }
         private decimal Balance { get; set; } = 0;
         public string Name { get; set; }
         public bool IsActive { get; set; } = true;
+
+        public abstract void Save();
 
         public virtual string Print() {
             return $"{this.Number} | {this.Balance} | {this.Name} ";

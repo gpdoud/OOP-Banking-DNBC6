@@ -6,6 +6,9 @@ namespace OopBankingProject {
 
         static void Main(string[] args) {
 
+            var dummy = new IDummy();
+            var acct1 = new Account();
+
             Savings sav1 = new Savings();
             sav1.Number = "SAV001";
             sav1.Name = "My savings account";
